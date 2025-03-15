@@ -52,3 +52,19 @@ function sortearAmigo() {
     resultado.innerHTML = `<li>${amigoSorteado}</li>`;
 }
 
+function limparLista() {
+    // Limpa o array de amigos
+    amigos = [];
+
+    // Limpa a lista de amigos na tela
+    const listaAmigos = document.getElementById('listaAmigos');
+    listaAmigos.innerHTML = "";
+
+    // Limpa o resultado do sorteio
+    const resultado = document.getElementById('resultado');
+    resultado.innerHTML = "";
+
+    // Limpa o campo de entrada
+    const inputAmigo = document.getElementById('amigo');
+    inputAmigo.value = "";
+}
